@@ -1,0 +1,33 @@
+{
+  "endpoints": [
+    {
+      "api_key_env": "OPENAI_API_KEY",
+      "max_output_tokens": 16,
+      "model_snapshot": "OPENAI_MODEL_SNAPSHOT_UNSET",
+      "name": "openai",
+      "temperature": 0,
+      "transport": "inline_base64_raw_bytes"
+    },
+    {
+      "api_key_env": "ANTHROPIC_API_KEY",
+      "max_output_tokens": 16,
+      "model_snapshot": "ANTHROPIC_MODEL_SNAPSHOT_UNSET",
+      "name": "anthropic",
+      "temperature": 0,
+      "transport": "inline_base64_raw_bytes"
+    },
+    {
+      "api_key_env": "GOOGLE_API_KEY",
+      "max_output_tokens": 16,
+      "model_snapshot": "GOOGLE_MODEL_SNAPSHOT_UNSET",
+      "name": "google",
+      "temperature": 0,
+      "transport": "inline_base64_raw_bytes_no_pil"
+    }
+  ],
+  "experimental_ingestion_contrast": {
+    "primary": "inline_base64_exact_bytes",
+    "secondary": "files_api_upload",
+    "status": "config_stub_only_no_live_calls; filename and server-side upload handling are intentionally out of the invariant core"
+  }
+}

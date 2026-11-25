@@ -1,0 +1,33 @@
+{
+  "dependencies": {
+    "numpy": {
+      "installed_tree_sha256": "815bb2685b3155a0a38c7d27c2430f38b6c5fc454d746d5a71ac1cd82b879d0e",
+      "version": "2.2.6"
+    },
+    "opencv-python-headless": {
+      "installed_tree_sha256": "71847db37de6f360e592f015fb75d4d2ad2bd9067916ffefe67f73f9f3b9fc6d",
+      "version": "4.12.0.88"
+    },
+    "piexif": {
+      "installed_tree_sha256": "da50f1afc44563fff3efe07e4012a75abbf72df890cb4f46d2af0c9ca38f66d7",
+      "version": "1.1.3"
+    },
+    "pillow": {
+      "installed_tree_sha256": "2e625a278d07a56bc15979ade04da3c5d23606f242bbf3b94f26fae7885ab4f2",
+      "version": "13.0.0"
+    },
+    "pytest": {
+      "installed_tree_sha256": "52c25ce5b5f9c094c6252b458b7c5ca04de2a8c4be4f7fc740cc97486d97b362",
+      "version": "8.4.2"
+    },
+    "scipy": {
+      "installed_tree_sha256": "e30a28dad94109a4b5f2d4cfe31516c974cfba3282456daff49d08b8d5c305b1",
+      "version": "1.16.3"
+    }
+  },
+  "machine": "arm64",
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "python": "3.12.13 (main, Mar 25 2026, 03:16:06) [Clang 22.1.1 ]",
+  "requirements_txt_sha256": "8920ea155434124e9caac575ed04a8cbfed1e03184ee2f77d31cbb7203653296",
+  "schema": "container-ghosts.environment.v1"
+}

@@ -1,0 +1,2 @@
+c2pa-python==0.39.0
+cryptography==46.0.3
