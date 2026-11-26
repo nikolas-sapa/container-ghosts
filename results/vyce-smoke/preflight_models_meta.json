@@ -1,0 +1,26 @@
+{
+  "authorization": "Bearer <redacted>",
+  "http_status": 200,
+  "method": "GET",
+  "note": "Catalog preflight only; no completion tokens generated",
+  "response_headers": {
+    "Access-Control-Allow-Headers": "*",
+    "Access-Control-Allow-Methods": "GET, POST, DELETE, OPTIONS",
+    "Access-Control-Allow-Origin": "*",
+    "CF-RAY": "a606ef8a8f4d6f49-ATH",
+    "Connection": "close",
+    "Content-Type": "application/json",
+    "Date": "Thu, 26 Nov 2026 06:46:23 GMT",
+    "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+    "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=n7ud84xa11W5MFrzzNrOp80jJaDD5cqnRlU2wdqJj2GdLe8FBTHXP%2B1yESGAyyQiNTkqh%2FBK9lIOROJH3avuAY9eoOjJUlNEZ20sbyw3YeZ4JNKdWnu%2F6nyxzW2k\"}]}",
+    "Server": "cloudflare",
+    "Transfer-Encoding": "chunked",
+    "X-Request-ID": "req_mwx6vnkc53de767f2dfe",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC"
+  },
+  "response_sha256": "49fec52bcfd39b1c8857d0b0b036116f074c97886682742329c36e864daff66d",
+  "url_path": "/v1/models",
+  "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/131 Safari/537.36",
+  "utc": "2026-11-26T06:46:23.317272Z"
+}

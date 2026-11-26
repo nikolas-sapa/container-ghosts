@@ -1,0 +1,31 @@
+{
+  "distinct_served_models": [],
+  "distinct_system_fingerprints": [],
+  "latency_ms": {
+    "max": 5496.412,
+    "mean": 5496.412,
+    "min": 5496.412
+  },
+  "rows": [
+    {
+      "call_id": "core-000",
+      "extra_top_level_response_fields": [
+        "error",
+        "request_id"
+      ],
+      "finish_reason": null,
+      "http_status": 402,
+      "json_error": null,
+      "latency_ms": 5496.412,
+      "message_fields": [],
+      "rate_limit_and_request_headers": {
+        "x-request-id": "req_mwx6r04xe48ec7ad7d7f"
+      },
+      "refusal": null,
+      "response_text_byte_length": 0,
+      "served_model": null,
+      "system_fingerprint": null,
+      "transport_error": "http_status_402"
+    }
+  ]
+}

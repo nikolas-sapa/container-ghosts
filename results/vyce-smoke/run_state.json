@@ -1,0 +1,26 @@
+{
+  "completed_calls": 1,
+  "detail": "core-000 returned status=402 error=http_status_402",
+  "executed_this_invocation": 1,
+  "planned_calls": 16,
+  "remaining_call_ids": [
+    "core-001",
+    "core-002",
+    "core-003",
+    "core-004",
+    "core-005",
+    "core-006",
+    "core-007",
+    "core-008",
+    "core-009",
+    "core-010",
+    "core-011",
+    "exact-repeat-j0-000",
+    "exact-repeat-j0-001",
+    "exact-repeat-p0-000",
+    "exact-repeat-p0-001"
+  ],
+  "smoke_plan_sha256": "2be829d1611fe7072c4511dea6c3adaa571ab03db7bd04fd28d32606c5454454",
+  "status": "endpoint_error",
+  "summary_path": null
+}

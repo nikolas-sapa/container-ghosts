@@ -1,0 +1,57 @@
+{
+  "artifacts": {
+    "capability_gate.json": {
+      "byte_length": 415,
+      "sha256": "e0c393cfd893bb5513a4ca5d7d5d75b0ab0d03d7ff359ff40d662c31144e0967"
+    },
+    "cost_ledger.jsonl": {
+      "byte_length": 718,
+      "sha256": "0fdffe77d84d22e2e39cc237dcfd3a22ef417796667bebf20387ed2b1b06fbb6"
+    },
+    "preflight_models_meta.json": {
+      "byte_length": 1280,
+      "sha256": "2162e456f2f8aba4deea0e951960ca9b78da5d101efcf0349eca41317d6de809"
+    },
+    "preflight_models_python_ua_meta.json": {
+      "byte_length": 1221,
+      "sha256": "034f019c78c3df10e1b2e7fc07f59f08cced86acbaae21d1eb4b6883362eb575"
+    },
+    "preflight_models_python_ua_response.json": {
+      "byte_length": 700,
+      "sha256": "621a2450709334bc4c65216b69954c61c3916f6df29f58d2380dc9e9333f41e1"
+    },
+    "preflight_models_response.json": {
+      "byte_length": 863,
+      "sha256": "49fec52bcfd39b1c8857d0b0b036116f074c97886682742329c36e864daff66d"
+    },
+    "raw/0000_core-000_request.json": {
+      "byte_length": 63856,
+      "sha256": "6346b574aa47dc25fe70aaa5b9869ffa481d2a8909205517ea5eb1ea3ee41e5e"
+    },
+    "raw/0000_core-000_response.json": {
+      "byte_length": 163,
+      "sha256": "ad38e908150c482cb9d2121c4d6573dcf7ed153fdb980dcdd45bf351b83e5523"
+    },
+    "records.jsonl": {
+      "byte_length": 3169,
+      "sha256": "f729e384cb428ca48b11f38b35c38a28e31ddc527addb0af95f5006344c8e763"
+    },
+    "relay_artifacts.json": {
+      "byte_length": 714,
+      "sha256": "7ddf4c2e275a18a59ae81a82c37556f48daa789e3b29fe0f95616fe6eb396097"
+    },
+    "run_state.json": {
+      "byte_length": 608,
+      "sha256": "0be40f3d8cbc376c20447aee70df2ba5f71d7b7545d2eb89ee81eaa62cbca409"
+    },
+    "smoke_plan.json": {
+      "byte_length": 21862,
+      "sha256": "2be829d1611fe7072c4511dea6c3adaa571ab03db7bd04fd28d32606c5454454"
+    },
+    "smoke_summary.json": {
+      "byte_length": 2435,
+      "sha256": "4d85e4c5ccffa98b362de45037d4b83e1fd61214518608256493820e560d6765"
+    }
+  },
+  "schema": "container-ghosts.artifact-hashes.v1"
+}

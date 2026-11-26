@@ -1,0 +1,43 @@
+{
+  "schema": "container-ghosts.vyce-smoke-config.v1",
+  "scientific_status": "INSTRUMENT VALIDATION ONLY on a relayed open-model endpoint; not a scientific result and not paper-grade evidence about any production frontier pipeline or NVIDIA serving stack",
+  "image_id": "object_arrangement",
+  "core_seed": "vyce-smoke|object_arrangement|core|6",
+  "endpoint": {
+    "name": "vyce_nemotron_relay",
+    "api_shape": "openai_compatible_chat_completions",
+    "base_url": "https://vyceai.com/v1",
+    "chat_completions_path": "/chat/completions",
+    "api_key_file": "~/.secrets/vyceai-api-key",
+    "model_snapshot": "nemotron-3.5-super-vl",
+    "temperature": 0,
+    "max_output_tokens": 16,
+    "transport": "inline_base64_raw_bytes",
+    "timeout_seconds": 120
+  },
+  "cost": {
+    "hard_cap_usd": "4.00",
+    "assumed_input_price_per_million_usd": "0.50",
+    "assumed_output_price_per_million_usd": "1.50",
+    "pricing_note": "Prices are conservative cap-accounting assumptions because relay pricing was not independently verified; they are not a claim about actual relay billing"
+  },
+  "exact_repeat_controls": [
+    {
+      "control_id": "exact-repeat-j0",
+      "variant": "J0",
+      "repetitions": 2,
+      "seed": "vyce-smoke|object_arrangement|exact-repeat-j0"
+    },
+    {
+      "control_id": "exact-repeat-p0",
+      "variant": "P0",
+      "repetitions": 2,
+      "seed": "vyce-smoke|object_arrangement|exact-repeat-p0"
+    }
+  ],
+  "capability_gate": {
+    "first_call_id": "core-000",
+    "manual_gate_before_remaining_calls": true,
+    "criterion": "HTTP 200 without an image-input rejection; semantic content is inspected descriptively before continuing"
+  }
+}

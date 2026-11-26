@@ -1,0 +1,90 @@
+{
+  "canary_and_provenance_scan": {
+    "canary": "GHOSTCANARY_4F7G47HP6GXP",
+    "exact_canary_emission_call_ids": [],
+    "exact_canary_emission_count": 0,
+    "provenance_marker_count": 0,
+    "provenance_marker_rows": []
+  },
+  "completed_calls": 1,
+  "cost": {
+    "assumed_input_price_per_million_usd": "0.50",
+    "assumed_output_price_per_million_usd": "1.50",
+    "hard_cap_usd": "4.00000000",
+    "ledger_entries": 1,
+    "ledger_path": "cost_ledger.jsonl",
+    "ledgered_input_tokens": 15972,
+    "ledgered_output_tokens": 16,
+    "total_cost_usd_under_assumed_prices": "0.00801000",
+    "usage_sources": [
+      "conservative_transport_bytes_upper_bound"
+    ]
+  },
+  "cross_container_descriptive": {
+    "jpegai": {
+      "occurrence_matched_observations": [],
+      "pair": [
+        "J0",
+        "JA"
+      ]
+    },
+    "jpegcam": {
+      "occurrence_matched_observations": [],
+      "pair": [
+        "J0",
+        "JC"
+      ]
+    },
+    "pngrepr": {
+      "occurrence_matched_observations": [],
+      "pair": [
+        "P0",
+        "P1"
+      ]
+    },
+    "prov": {
+      "occurrence_matched_observations": [],
+      "pair": [
+        "JC",
+        "JA"
+      ]
+    }
+  },
+  "endpoint": "vyce_nemotron_relay",
+  "exact_repeat_summary": {
+    "pair_count": 0,
+    "pairs": [],
+    "parsed_letters_identical_count": 0,
+    "raw_text_identical_count": 0
+  },
+  "planned_calls": 16,
+  "relay_artifacts_path": "relay_artifacts.json",
+  "requested_model": "nemotron-3.5-super-vl",
+  "schema": "container-ghosts.vyce-smoke-summary.v1",
+  "scientific_status": "INSTRUMENT VALIDATION ONLY on a relayed open-model endpoint; not a scientific result and not paper-grade evidence about any production frontier pipeline or NVIDIA serving stack",
+  "semantic_summary": {
+    "invalid_exact_grammar": 1,
+    "q1_correct_count": 0,
+    "q2_correct_count": 0,
+    "rows": [
+      {
+        "call_id": "core-000",
+        "letters": null,
+        "q1_correct": false,
+        "q2_correct": false,
+        "q3_semantic_answer": null,
+        "semantics": null,
+        "variant": "J0"
+      }
+    ],
+    "valid_exact_grammar": 0
+  },
+  "served_models": [],
+  "system_fingerprints": [],
+  "validation_errors": [
+    "record count 1 does not match planned calls 16",
+    "core: ABBA sequence length is not 12",
+    "core: JC/JA are not adjacent in the first half",
+    "core: J0 does not occur exactly twice in mirrored positions"
+  ]
+}

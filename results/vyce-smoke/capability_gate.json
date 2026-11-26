@@ -1,0 +1,11 @@
+{
+  "call_id": "core-000",
+  "exact_grammar": false,
+  "http_status": 402,
+  "http_success": false,
+  "interpretation": "HTTP 200 means the relay accepted the inline image payload shape; semantic correctness is descriptive evidence about vision behavior, not proof by itself",
+  "nonempty_text": false,
+  "q1_semantically_correct": false,
+  "q2_semantically_correct": false,
+  "semantic_content_correct_count": 0
+}

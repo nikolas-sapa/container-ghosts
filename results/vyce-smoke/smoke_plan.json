@@ -1,0 +1,486 @@
+{
+  "config_sha256": "729f65d72be7073d77795cd594dac84482adb9581e043d3cfc0dd9ff1cc2a19a",
+  "core_sequence": [
+    "J0",
+    "PT",
+    "P0",
+    "P1",
+    "JC",
+    "JA",
+    "JA",
+    "JC",
+    "P1",
+    "P0",
+    "PT",
+    "J0"
+  ],
+  "exact_repeat_controls": [
+    {
+      "control_id": "exact-repeat-j0",
+      "repetitions": 2,
+      "seed": "vyce-smoke|object_arrangement|exact-repeat-j0",
+      "variant": "J0"
+    },
+    {
+      "control_id": "exact-repeat-p0",
+      "repetitions": 2,
+      "seed": "vyce-smoke|object_arrangement|exact-repeat-p0",
+      "variant": "P0"
+    }
+  ],
+  "image_canary": "GHOSTCANARY_4F7G47HP6GXP",
+  "image_id": "object_arrangement",
+  "items": [
+    {
+      "call_id": "core-000",
+      "global_sequence_index": 0,
+      "image_id": "object_arrangement",
+      "mode": "abba",
+      "nonce": "GHOSTNONCE_9D8B5AB2DD19912A",
+      "occurrence": 1,
+      "option_mappings": {
+        "q1": {
+          "A": "three arranged objects",
+          "B": "one object"
+        },
+        "q2": {
+          "A": "A plate of food on a table",
+          "B": "Three face-free stylized objects on a surface"
+        },
+        "q3": {
+          "A": "AI-generated image",
+          "B": "camera photograph"
+        }
+      },
+      "phase": "core_abba",
+      "prompt": "Nonce: GHOSTNONCE_9D8B5AB2DD19912A\nAnswer the three independent questions about the image. Return exactly three letters separated by commas and nothing else.\n1. Which count-or-color description is more accurate? A: three arranged objects B: one object\n2. Which caption is more accurate? A: A plate of food on a table B: Three face-free stylized objects on a surface\n3. Does this image appear to be a camera photograph or AI-generated? A: AI-generated image B: camera photograph",
+      "prompt_sha256": "be556c42adf16390361b3fb2d8a6e702ed403bdd4ba6fece27bc2953d918b49f",
+      "seed": "vyce-smoke|object_arrangement|core|6",
+      "sequence_index": 0,
+      "variant": "J0"
+    },
+    {
+      "call_id": "core-001",
+      "global_sequence_index": 1,
+      "image_id": "object_arrangement",
+      "mode": "abba",
+      "nonce": "GHOSTNONCE_5E79A56B3068F92F",
+      "occurrence": 1,
+      "option_mappings": {
+        "q1": {
+          "A": "three arranged objects",
+          "B": "one object"
+        },
+        "q2": {
+          "A": "A plate of food on a table",
+          "B": "Three face-free stylized objects on a surface"
+        },
+        "q3": {
+          "A": "AI-generated image",
+          "B": "camera photograph"
+        }
+      },
+      "phase": "core_abba",
+      "prompt": "Nonce: GHOSTNONCE_5E79A56B3068F92F\nAnswer the three independent questions about the image. Return exactly three letters separated by commas and nothing else.\n1. Which count-or-color description is more accurate? A: three arranged objects B: one object\n2. Which caption is more accurate? A: A plate of food on a table B: Three face-free stylized objects on a surface\n3. Does this image appear to be a camera photograph or AI-generated? A: AI-generated image B: camera photograph",
+      "prompt_sha256": "b7be83f1afe87c87cbb08a83278b8374bd2480f1450845dfaca40efdbcddffa1",
+      "seed": "vyce-smoke|object_arrangement|core|6",
+      "sequence_index": 1,
+      "variant": "PT"
+    },
+    {
+      "call_id": "core-002",
+      "global_sequence_index": 2,
+      "image_id": "object_arrangement",
+      "mode": "abba",
+      "nonce": "GHOSTNONCE_41FECD841C71DC4F",
+      "occurrence": 1,
+      "option_mappings": {
+        "q1": {
+          "A": "three arranged objects",
+          "B": "one object"
+        },
+        "q2": {
+          "A": "A plate of food on a table",
+          "B": "Three face-free stylized objects on a surface"
+        },
+        "q3": {
+          "A": "AI-generated image",
+          "B": "camera photograph"
+        }
+      },
+      "phase": "core_abba",
+      "prompt": "Nonce: GHOSTNONCE_41FECD841C71DC4F\nAnswer the three independent questions about the image. Return exactly three letters separated by commas and nothing else.\n1. Which count-or-color description is more accurate? A: three arranged objects B: one object\n2. Which caption is more accurate? A: A plate of food on a table B: Three face-free stylized objects on a surface\n3. Does this image appear to be a camera photograph or AI-generated? A: AI-generated image B: camera photograph",
+      "prompt_sha256": "5a70c22ddfd3a34b1fce1781ae2b937d572524829a36388e4714da0878f3a335",
+      "seed": "vyce-smoke|object_arrangement|core|6",
+      "sequence_index": 2,
+      "variant": "P0"
+    },
+    {
+      "call_id": "core-003",
+      "global_sequence_index": 3,
+      "image_id": "object_arrangement",
+      "mode": "abba",
+      "nonce": "GHOSTNONCE_A4B28ACDD5957970",
+      "occurrence": 1,
+      "option_mappings": {
+        "q1": {
+          "A": "three arranged objects",
+          "B": "one object"
+        },
+        "q2": {
+          "A": "A plate of food on a table",
+          "B": "Three face-free stylized objects on a surface"
+        },
+        "q3": {
+          "A": "AI-generated image",
+          "B": "camera photograph"
+        }
+      },
+      "phase": "core_abba",
+      "prompt": "Nonce: GHOSTNONCE_A4B28ACDD5957970\nAnswer the three independent questions about the image. Return exactly three letters separated by commas and nothing else.\n1. Which count-or-color description is more accurate? A: three arranged objects B: one object\n2. Which caption is more accurate? A: A plate of food on a table B: Three face-free stylized objects on a surface\n3. Does this image appear to be a camera photograph or AI-generated? A: AI-generated image B: camera photograph",
+      "prompt_sha256": "1acb68056f4c537819a09fe3e75655e2507b622e0a8259a3fc16d1d0a2b33225",
+      "seed": "vyce-smoke|object_arrangement|core|6",
+      "sequence_index": 3,
+      "variant": "P1"
+    },
+    {
+      "call_id": "core-004",
+      "global_sequence_index": 4,
+      "image_id": "object_arrangement",
+      "mode": "abba",
+      "nonce": "GHOSTNONCE_CF0C4E8063D8062F",
+      "occurrence": 1,
+      "option_mappings": {
+        "q1": {
+          "A": "three arranged objects",
+          "B": "one object"
+        },
+        "q2": {
+          "A": "A plate of food on a table",
+          "B": "Three face-free stylized objects on a surface"
+        },
+        "q3": {
+          "A": "AI-generated image",
+          "B": "camera photograph"
+        }
+      },
+      "phase": "core_abba",
+      "prompt": "Nonce: GHOSTNONCE_CF0C4E8063D8062F\nAnswer the three independent questions about the image. Return exactly three letters separated by commas and nothing else.\n1. Which count-or-color description is more accurate? A: three arranged objects B: one object\n2. Which caption is more accurate? A: A plate of food on a table B: Three face-free stylized objects on a surface\n3. Does this image appear to be a camera photograph or AI-generated? A: AI-generated image B: camera photograph",
+      "prompt_sha256": "eff23606d1cc357711291c9ac5009a2ead5d74c7eb183a5230849c7398ae5724",
+      "seed": "vyce-smoke|object_arrangement|core|6",
+      "sequence_index": 4,
+      "variant": "JC"
+    },
+    {
+      "call_id": "core-005",
+      "global_sequence_index": 5,
+      "image_id": "object_arrangement",
+      "mode": "abba",
+      "nonce": "GHOSTNONCE_84DDB2C065E54F9E",
+      "occurrence": 1,
+      "option_mappings": {
+        "q1": {
+          "A": "three arranged objects",
+          "B": "one object"
+        },
+        "q2": {
+          "A": "A plate of food on a table",
+          "B": "Three face-free stylized objects on a surface"
+        },
+        "q3": {
+          "A": "AI-generated image",
+          "B": "camera photograph"
+        }
+      },
+      "phase": "core_abba",
+      "prompt": "Nonce: GHOSTNONCE_84DDB2C065E54F9E\nAnswer the three independent questions about the image. Return exactly three letters separated by commas and nothing else.\n1. Which count-or-color description is more accurate? A: three arranged objects B: one object\n2. Which caption is more accurate? A: A plate of food on a table B: Three face-free stylized objects on a surface\n3. Does this image appear to be a camera photograph or AI-generated? A: AI-generated image B: camera photograph",
+      "prompt_sha256": "8751e728ae0f0ecfcb94fbc02c8409b7a635eee5c666da95148268066e4c9b1d",
+      "seed": "vyce-smoke|object_arrangement|core|6",
+      "sequence_index": 5,
+      "variant": "JA"
+    },
+    {
+      "call_id": "core-006",
+      "global_sequence_index": 6,
+      "image_id": "object_arrangement",
+      "mode": "abba",
+      "nonce": "GHOSTNONCE_0EC1D94D2847CA13",
+      "occurrence": 2,
+      "option_mappings": {
+        "q1": {
+          "A": "three arranged objects",
+          "B": "one object"
+        },
+        "q2": {
+          "A": "A plate of food on a table",
+          "B": "Three face-free stylized objects on a surface"
+        },
+        "q3": {
+          "A": "AI-generated image",
+          "B": "camera photograph"
+        }
+      },
+      "phase": "core_abba",
+      "prompt": "Nonce: GHOSTNONCE_0EC1D94D2847CA13\nAnswer the three independent questions about the image. Return exactly three letters separated by commas and nothing else.\n1. Which count-or-color description is more accurate? A: three arranged objects B: one object\n2. Which caption is more accurate? A: A plate of food on a table B: Three face-free stylized objects on a surface\n3. Does this image appear to be a camera photograph or AI-generated? A: AI-generated image B: camera photograph",
+      "prompt_sha256": "562cfed7f53b2f242999169a298772b60b1ffa96a9ff24dbe2b4299e64091d7c",
+      "seed": "vyce-smoke|object_arrangement|core|6",
+      "sequence_index": 6,
+      "variant": "JA"
+    },
+    {
+      "call_id": "core-007",
+      "global_sequence_index": 7,
+      "image_id": "object_arrangement",
+      "mode": "abba",
+      "nonce": "GHOSTNONCE_CF50CFB54BEB032D",
+      "occurrence": 2,
+      "option_mappings": {
+        "q1": {
+          "A": "three arranged objects",
+          "B": "one object"
+        },
+        "q2": {
+          "A": "A plate of food on a table",
+          "B": "Three face-free stylized objects on a surface"
+        },
+        "q3": {
+          "A": "AI-generated image",
+          "B": "camera photograph"
+        }
+      },
+      "phase": "core_abba",
+      "prompt": "Nonce: GHOSTNONCE_CF50CFB54BEB032D\nAnswer the three independent questions about the image. Return exactly three letters separated by commas and nothing else.\n1. Which count-or-color description is more accurate? A: three arranged objects B: one object\n2. Which caption is more accurate? A: A plate of food on a table B: Three face-free stylized objects on a surface\n3. Does this image appear to be a camera photograph or AI-generated? A: AI-generated image B: camera photograph",
+      "prompt_sha256": "a1f5d82228fb9685290680f2b40d8b175ed35fd3bf8bf222c8659c80b2bfbf98",
+      "seed": "vyce-smoke|object_arrangement|core|6",
+      "sequence_index": 7,
+      "variant": "JC"
+    },
+    {
+      "call_id": "core-008",
+      "global_sequence_index": 8,
+      "image_id": "object_arrangement",
+      "mode": "abba",
+      "nonce": "GHOSTNONCE_DE44DD2415F26B4F",
+      "occurrence": 2,
+      "option_mappings": {
+        "q1": {
+          "A": "three arranged objects",
+          "B": "one object"
+        },
+        "q2": {
+          "A": "A plate of food on a table",
+          "B": "Three face-free stylized objects on a surface"
+        },
+        "q3": {
+          "A": "AI-generated image",
+          "B": "camera photograph"
+        }
+      },
+      "phase": "core_abba",
+      "prompt": "Nonce: GHOSTNONCE_DE44DD2415F26B4F\nAnswer the three independent questions about the image. Return exactly three letters separated by commas and nothing else.\n1. Which count-or-color description is more accurate? A: three arranged objects B: one object\n2. Which caption is more accurate? A: A plate of food on a table B: Three face-free stylized objects on a surface\n3. Does this image appear to be a camera photograph or AI-generated? A: AI-generated image B: camera photograph",
+      "prompt_sha256": "f965c58ca2f7ab19c504297515da0bd66686fdb64f4fa5522180b944f46da713",
+      "seed": "vyce-smoke|object_arrangement|core|6",
+      "sequence_index": 8,
+      "variant": "P1"
+    },
+    {
+      "call_id": "core-009",
+      "global_sequence_index": 9,
+      "image_id": "object_arrangement",
+      "mode": "abba",
+      "nonce": "GHOSTNONCE_7DE7A4000CD3E570",
+      "occurrence": 2,
+      "option_mappings": {
+        "q1": {
+          "A": "three arranged objects",
+          "B": "one object"
+        },
+        "q2": {
+          "A": "A plate of food on a table",
+          "B": "Three face-free stylized objects on a surface"
+        },
+        "q3": {
+          "A": "AI-generated image",
+          "B": "camera photograph"
+        }
+      },
+      "phase": "core_abba",
+      "prompt": "Nonce: GHOSTNONCE_7DE7A4000CD3E570\nAnswer the three independent questions about the image. Return exactly three letters separated by commas and nothing else.\n1. Which count-or-color description is more accurate? A: three arranged objects B: one object\n2. Which caption is more accurate? A: A plate of food on a table B: Three face-free stylized objects on a surface\n3. Does this image appear to be a camera photograph or AI-generated? A: AI-generated image B: camera photograph",
+      "prompt_sha256": "024d3ec54d63985ce03133e438ca7deecc19bacc143fc5c6dc5de924c44d33a7",
+      "seed": "vyce-smoke|object_arrangement|core|6",
+      "sequence_index": 9,
+      "variant": "P0"
+    },
+    {
+      "call_id": "core-010",
+      "global_sequence_index": 10,
+      "image_id": "object_arrangement",
+      "mode": "abba",
+      "nonce": "GHOSTNONCE_27670DEA6C3E352C",
+      "occurrence": 2,
+      "option_mappings": {
+        "q1": {
+          "A": "three arranged objects",
+          "B": "one object"
+        },
+        "q2": {
+          "A": "A plate of food on a table",
+          "B": "Three face-free stylized objects on a surface"
+        },
+        "q3": {
+          "A": "AI-generated image",
+          "B": "camera photograph"
+        }
+      },
+      "phase": "core_abba",
+      "prompt": "Nonce: GHOSTNONCE_27670DEA6C3E352C\nAnswer the three independent questions about the image. Return exactly three letters separated by commas and nothing else.\n1. Which count-or-color description is more accurate? A: three arranged objects B: one object\n2. Which caption is more accurate? A: A plate of food on a table B: Three face-free stylized objects on a surface\n3. Does this image appear to be a camera photograph or AI-generated? A: AI-generated image B: camera photograph",
+      "prompt_sha256": "3c18bd1d647f63041d5baa009b26875f6b5ce41c813034d4eb809c7a3978fc85",
+      "seed": "vyce-smoke|object_arrangement|core|6",
+      "sequence_index": 10,
+      "variant": "PT"
+    },
+    {
+      "call_id": "core-011",
+      "global_sequence_index": 11,
+      "image_id": "object_arrangement",
+      "mode": "abba",
+      "nonce": "GHOSTNONCE_0A7CF11D1EF77009",
+      "occurrence": 2,
+      "option_mappings": {
+        "q1": {
+          "A": "three arranged objects",
+          "B": "one object"
+        },
+        "q2": {
+          "A": "A plate of food on a table",
+          "B": "Three face-free stylized objects on a surface"
+        },
+        "q3": {
+          "A": "AI-generated image",
+          "B": "camera photograph"
+        }
+      },
+      "phase": "core_abba",
+      "prompt": "Nonce: GHOSTNONCE_0A7CF11D1EF77009\nAnswer the three independent questions about the image. Return exactly three letters separated by commas and nothing else.\n1. Which count-or-color description is more accurate? A: three arranged objects B: one object\n2. Which caption is more accurate? A: A plate of food on a table B: Three face-free stylized objects on a surface\n3. Does this image appear to be a camera photograph or AI-generated? A: AI-generated image B: camera photograph",
+      "prompt_sha256": "8a8ae1d78c673619d92666fc28795cdbaeca42e10839443f5323bde0993e7976",
+      "seed": "vyce-smoke|object_arrangement|core|6",
+      "sequence_index": 11,
+      "variant": "J0"
+    },
+    {
+      "call_id": "exact-repeat-j0-000",
+      "global_sequence_index": 12,
+      "image_id": "object_arrangement",
+      "mode": "exact-repeat-j0",
+      "nonce": "GHOSTNONCE_688F22C107D85657",
+      "occurrence": 1,
+      "option_mappings": {
+        "q1": {
+          "A": "three arranged objects",
+          "B": "one object"
+        },
+        "q2": {
+          "A": "A plate of food on a table",
+          "B": "Three face-free stylized objects on a surface"
+        },
+        "q3": {
+          "A": "AI-generated image",
+          "B": "camera photograph"
+        }
+      },
+      "phase": "exact_repeat_control",
+      "prompt": "Nonce: GHOSTNONCE_688F22C107D85657\nAnswer the three independent questions about the image. Return exactly three letters separated by commas and nothing else.\n1. Which count-or-color description is more accurate? A: three arranged objects B: one object\n2. Which caption is more accurate? A: A plate of food on a table B: Three face-free stylized objects on a surface\n3. Does this image appear to be a camera photograph or AI-generated? A: AI-generated image B: camera photograph",
+      "prompt_sha256": "b02daecf4fefdc8ef07e3a638ede20e0b49724cfa84a0eb09ad562921968f5cf",
+      "seed": "vyce-smoke|object_arrangement|exact-repeat-j0",
+      "sequence_index": 0,
+      "variant": "J0"
+    },
+    {
+      "call_id": "exact-repeat-j0-001",
+      "global_sequence_index": 13,
+      "image_id": "object_arrangement",
+      "mode": "exact-repeat-j0",
+      "nonce": "GHOSTNONCE_35F73EDB4D738D0D",
+      "occurrence": 2,
+      "option_mappings": {
+        "q1": {
+          "A": "three arranged objects",
+          "B": "one object"
+        },
+        "q2": {
+          "A": "A plate of food on a table",
+          "B": "Three face-free stylized objects on a surface"
+        },
+        "q3": {
+          "A": "AI-generated image",
+          "B": "camera photograph"
+        }
+      },
+      "phase": "exact_repeat_control",
+      "prompt": "Nonce: GHOSTNONCE_35F73EDB4D738D0D\nAnswer the three independent questions about the image. Return exactly three letters separated by commas and nothing else.\n1. Which count-or-color description is more accurate? A: three arranged objects B: one object\n2. Which caption is more accurate? A: A plate of food on a table B: Three face-free stylized objects on a surface\n3. Does this image appear to be a camera photograph or AI-generated? A: AI-generated image B: camera photograph",
+      "prompt_sha256": "23089d09472da51834d8414c5ff26d4b111ae06151d1ea453103f56bb7f91202",
+      "seed": "vyce-smoke|object_arrangement|exact-repeat-j0",
+      "sequence_index": 1,
+      "variant": "J0"
+    },
+    {
+      "call_id": "exact-repeat-p0-000",
+      "global_sequence_index": 14,
+      "image_id": "object_arrangement",
+      "mode": "exact-repeat-p0",
+      "nonce": "GHOSTNONCE_CD7590DE752F9F63",
+      "occurrence": 1,
+      "option_mappings": {
+        "q1": {
+          "A": "three arranged objects",
+          "B": "one object"
+        },
+        "q2": {
+          "A": "A plate of food on a table",
+          "B": "Three face-free stylized objects on a surface"
+        },
+        "q3": {
+          "A": "AI-generated image",
+          "B": "camera photograph"
+        }
+      },
+      "phase": "exact_repeat_control",
+      "prompt": "Nonce: GHOSTNONCE_CD7590DE752F9F63\nAnswer the three independent questions about the image. Return exactly three letters separated by commas and nothing else.\n1. Which count-or-color description is more accurate? A: three arranged objects B: one object\n2. Which caption is more accurate? A: A plate of food on a table B: Three face-free stylized objects on a surface\n3. Does this image appear to be a camera photograph or AI-generated? A: AI-generated image B: camera photograph",
+      "prompt_sha256": "e1c420fa5e374ea5f6e52a5e145fdf38e1337837edba13991ee1442823ed0751",
+      "seed": "vyce-smoke|object_arrangement|exact-repeat-p0",
+      "sequence_index": 0,
+      "variant": "P0"
+    },
+    {
+      "call_id": "exact-repeat-p0-001",
+      "global_sequence_index": 15,
+      "image_id": "object_arrangement",
+      "mode": "exact-repeat-p0",
+      "nonce": "GHOSTNONCE_7ACEE8C844AF562F",
+      "occurrence": 2,
+      "option_mappings": {
+        "q1": {
+          "A": "three arranged objects",
+          "B": "one object"
+        },
+        "q2": {
+          "A": "A plate of food on a table",
+          "B": "Three face-free stylized objects on a surface"
+        },
+        "q3": {
+          "A": "AI-generated image",
+          "B": "camera photograph"
+        }
+      },
+      "phase": "exact_repeat_control",
+      "prompt": "Nonce: GHOSTNONCE_7ACEE8C844AF562F\nAnswer the three independent questions about the image. Return exactly three letters separated by commas and nothing else.\n1. Which count-or-color description is more accurate? A: three arranged objects B: one object\n2. Which caption is more accurate? A: A plate of food on a table B: Three face-free stylized objects on a surface\n3. Does this image appear to be a camera photograph or AI-generated? A: AI-generated image B: camera photograph",
+      "prompt_sha256": "86f5f8626005c76ac2f681229761e7ad201147f089a3d7571f338be7cea6ef9e",
+      "seed": "vyce-smoke|object_arrangement|exact-repeat-p0",
+      "sequence_index": 1,
+      "variant": "P0"
+    }
+  ],
+  "planned_calls": 16,
+  "schema": "container-ghosts.vyce-smoke-plan.v1",
+  "scientific_status": "INSTRUMENT VALIDATION ONLY on a relayed open-model endpoint; not a scientific result and not paper-grade evidence about any production frontier pipeline or NVIDIA serving stack"
+}

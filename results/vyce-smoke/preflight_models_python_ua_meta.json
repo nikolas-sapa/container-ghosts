@@ -1,0 +1,25 @@
+{
+  "authorization": "Bearer <redacted>",
+  "http_status": 403,
+  "method": "GET",
+  "note": "Catalog preflight only; no completion tokens generated",
+  "response_headers": {
+    "CF-RAY": "a606f89b7959eee8-ATH",
+    "Cache-Control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+    "Connection": "close",
+    "Content-Length": "700",
+    "Content-Type": "application/json; charset=utf-8",
+    "Date": "Thu, 26 Nov 2026 06:52:34 GMT",
+    "Expires": "Thu, 01 Jan 1970 00:00:01 GMT",
+    "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+    "Referrer-Policy": "same-origin",
+    "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=F5HVJC0PkMdkXHJYy3v7atk5IN67EtBjaGsjGxFAlOYadhoOx%2FQ37yVp%2F7qg%2BHYOl1fEclCrFdWBQTakjbh8a0j9dQ8uAS0ubA1wuTPXrZ2w86aQVgpc8LcCQV%2FI\"}]}",
+    "Server": "cloudflare",
+    "X-Frame-Options": "SAMEORIGIN",
+    "alt-svc": "h3=\":443\"; ma=86400"
+  },
+  "response_sha256": "621a2450709334bc4c65216b69954c61c3916f6df29f58d2380dc9e9333f41e1",
+  "url_path": "/v1/models",
+  "user_agent": "Python urllib default",
+  "utc": "2026-11-26T06:52:34.500315Z"
+}

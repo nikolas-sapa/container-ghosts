@@ -91,7 +91,12 @@ def endpoint_payload(endpoint: dict, image_bytes: bytes, mime_type: str, prompt:
         raise TypeError("image payload must be raw bytes, never a PIL object")
     encoded = base64.b64encode(image_bytes).decode("ascii")
     name = endpoint["name"]
-    if name == "openai":
+    if endpoint.get("api_shape") == "openai_compatible_chat_completions":
+        body = {"model": endpoint["model_snapshot"], "messages": [{"role": "user", "content": [
+            {"type": "text", "text": prompt},
+            {"type": "image_url", "image_url": {"url": f"data:{mime_type};base64,{encoded}"}},
+        ]}], "temperature": endpoint["temperature"], "max_tokens": endpoint["max_output_tokens"]}
+    elif name == "openai":
         body = {"model": endpoint["model_snapshot"], "input": [{"role": "user", "content": [
             {"type": "input_text", "text": prompt},
             {"type": "input_image", "image_url": f"data:{mime_type};base64,{encoded}"},
