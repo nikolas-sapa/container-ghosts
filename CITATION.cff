@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: If you use this software or artifact design, please cite it using these metadata.
+title: "Container Ghosts: A Raster-Verified Audit Instrument for Vision-Language Ingestion Pipelines"
+type: software
+authors:
+  - family-names: Sapalidis
+    given-names: Nikolas
+repository-code: https://github.com/nikolas-sapa/container-ghosts
+url: https://github.com/nikolas-sapa/container-ghosts
+version: 0.1.0-pre-results
+date-released: 2026-11-26
+license: MIT
+keywords:
+  - vision-language models
+  - audit
+  - reproducibility
+  - image forensics
+  - measurement
+abstract: >-
+  Pre-results measurement artifact for testing whether production
+  vision-language ingestion pipelines respond to non-rendering image
+  container bytes while decoded pixels are held byte-identical.
