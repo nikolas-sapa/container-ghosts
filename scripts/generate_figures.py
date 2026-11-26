@@ -207,6 +207,7 @@ def fig1(build, verification, root):
     raster_hash = image["canonical_raster_sha256"]
     thumb_path = root / "artifacts" / image["variants"]["J0"]["path"]
     thumb = image_data_uri(thumb_path, width=300)
+    thumb_small = image_data_uri(thumb_path, width=176)
 
     svg = Svg(1600, 940, "Same decoded pixels, different container bytes", "Experimental logic of the container-ghosts paired variant design")
     header(
@@ -244,11 +245,19 @@ def fig1(build, verification, root):
         baseline_len = image["variants"]["J0"]["byte_length"]
         if critical != baseline_len:
             raise ValueError(f"{code} insertion accounting differs from J0 baseline: {critical} != {baseline_len}")
+
+        svg.rect(544, y + 116, 96, 96, rx=16, fill=GRAY_PALE, stroke=FAINT, sw=1)
+        svg.image(548, y + 120, 88, 88, thumb_small)
+        svg.circle(632, y + 204, 12, fill=GREEN)
+        svg.check_mark(623, y + 196, color=CARD, sw=2.4)
+        svg.text(592, y + 233, "decodes to the", size=10.5, weight=650, fill=GREEN, anchor="middle")
+        svg.text(592, y + 248, "identical raster", size=10.5, weight=650, fill=GREEN, anchor="middle")
+
         byte_bar(
             svg,
-            548,
+            668,
             y + 132,
-            690,
+            570,
             48,
             total,
             [
@@ -256,9 +265,9 @@ def fig1(build, verification, root):
                 ("metadata + padding", insertion, meta_color),
             ],
         )
-        svg.text(548, y + 210, "JPEG bytes, linear scale", size=11.5, weight=700, fill=MUTED, spacing="1.1")
-        svg.text(548, y + 235, f"{fmt_int(critical)} B critical structure + entropy-coded scan", size=13, fill=BLUE_DARK, weight=650)
-        svg.text(886, y + 235, f"{fmt_int(insertion)} B inserted segments/padding", size=13, fill=meta_color, weight=650)
+        svg.text(668, y + 210, "JPEG bytes, linear scale", size=11.5, weight=700, fill=MUTED, spacing="1.1")
+        svg.text(668, y + 235, f"{fmt_int(critical)} B critical structure + entropy-coded scan", size=13, fill=BLUE_DARK, weight=650)
+        svg.text(1238, y + 235, f"{fmt_int(insertion)} B inserted segments/padding", size=13, fill=meta_color, weight=650, anchor="end")
 
         zoom_x = 1258
         svg.line(1238, y + 156, zoom_x, y + 128, color=GRAY, sw=1.4, dash="4 5")
@@ -273,10 +282,10 @@ def fig1(build, verification, root):
         if com_width > 1:
             svg.rect(zoom_x + 18 + app_width, y + 166, max(2, com_width), 26, rx=5, fill=GRAY)
         svg.rect(zoom_x + 18 + app_width + com_width, y + 166, overhead_width, 26, rx=5, fill=FAINT)
-        svg.text(zoom_x + 18, y + 211, f"APP1 payload {fmt_int(app1)} B   COM payload {fmt_int(com)} B", size=11.5, weight=650, fill=DARK)
+        svg.text(zoom_x + 18, y + 211, f"APP1 {fmt_int(app1)} B    COM {fmt_int(com)} B", size=11.5, weight=650, fill=DARK)
         svg.text(zoom_x + 18, y + 228, f"segment headers {fmt_int(overhead)} B", size=10.5, weight=600, fill=MUTED)
-        svg.text(548, y + 265, "file SHA-256", size=11, weight=800, fill=MUTED, spacing="1.2")
-        svg.text(662, y + 265, short_hash(meta["sha256"], 18, 12), size=13.5, family=MONO, weight=650, fill=INK)
+        svg.text(668, y + 265, "file SHA-256", size=11, weight=800, fill=MUTED, spacing="1.2")
+        svg.text(782, y + 265, short_hash(meta["sha256"], 18, 12), size=13.5, family=MONO, weight=650, fill=INK)
         svg.pill(1320, y + 33, 164, f"{fmt_int(total)} BYTES", GRAY_PALE, DARK, height=34)
 
     variant_card(178, "JC", "camera provenance", "EXIF/XMP camera fixture inserted by binary segment splicing.", jc, vjc, PURPLE, PURPLE_PALE)
@@ -306,7 +315,7 @@ def fig2(build, verification):
         "Cross-container divergence is meaningful only after subtracting exact-byte-repeat instability.",
     )
 
-    svg.panel(64, 172, 1472, 226, eyebrow="Ordering control", title="Seeded palindromic sequence")
+    svg.panel(64, 172, 1472, 254, eyebrow="Ordering control", title="Seeded palindromic sequence")
     start_x = 102
     tile_w = 104
     gap = 16
@@ -316,18 +325,24 @@ def fig2(build, verification):
         "JC": (PURPLE_PALE, PURPLE), "JA": (GREEN_PALE, GREEN),
     }
     y = 260
+    centers = []
     for i, variant in enumerate(sequence):
         x = start_x + i * (tile_w + gap)
+        centers.append(x + tile_w / 2)
         fill, stroke = colors.get(variant, (GRAY_PALE, GRAY))
         svg.rect(x, y, tile_w, 68, rx=14, fill=fill, stroke=stroke, sw=1.4)
         svg.text(x + tile_w / 2, y + 32, variant, size=20, weight=800, fill=stroke, anchor="middle")
         svg.text(x + tile_w / 2, y + 53, f"call {i + 1}", size=10.5, weight=650, fill=MUTED, anchor="middle")
-        mirror_pair = min(i, 11 - i) + 1
-        svg.text(x + tile_w / 2, y + 91, f"mirror {mirror_pair}", size=10.5, weight=700, fill=GRAY, anchor="middle")
-    svg.text(102, 382, "example sequence used by the dry-run harness; matching mirror labels are exact-byte repetitions", size=13.5, fill=MUTED)
+    tile_bottom = y + 68
+    for pair in range(6):
+        left = centers[pair]
+        right = centers[11 - pair]
+        depth = tile_bottom + 10 + (5 - pair) * 9
+        svg.path(f"M {left} {tile_bottom + 3} L {left} {depth} L {right} {depth} L {right} {tile_bottom + 3}", stroke=GRAY, sw=1.7, opacity=0.62, linejoin="round")
+    svg.text(784, 412, "example sequence used by the dry-run harness — nested brackets connect exact-byte mirror repetitions", size=12.5, fill=MUTED, anchor="middle")
     svg.pill(1210, 205, 278, "JC/JA ADJACENT IN FIRST HALF", PURPLE_PALE, PURPLE, height=32, size=11.5)
 
-    row_y = 430
+    row_y = 444
     card_w = 466
     cards = [
         (64, "X / cross-container flip", "Compare occurrence-matched answers across two raster-identical container variants.", "Does changing only container bytes change behavior?", BLUE),
@@ -410,11 +425,11 @@ def fig3(build, verification):
     svg.text(92, 374, "same pixels, lossless re-encode", size=15, weight=650, fill=INK)
     svg.text(92, 404, "forensics guardrail example", size=13, fill=MUTED)
     svg.line(92, 438, 456, 438, color=GRID, sw=1)
-    svg.text(92, 474, "477 B", size=16, weight=760, family=MONO, fill=RED)
-    svg.text(92, 504, "compact lossless encoding", size=13, fill=MUTED)
-    svg.line(252, 480, 252, 560, color=RED, sw=2, marker="gray", opacity=0.5)
-    svg.text(92, 560, "~61 KB", size=16, weight=760, family=MONO, fill=RED)
-    svg.text(92, 590, "different lossless encoding", size=13, fill=MUTED)
+    svg.text(92, 468, "same pixels, linear byte scale", size=11.5, weight=700, fill=MUTED, spacing="1.1")
+    svg.rect(92, 482, 3, 26, rx=1.5, fill=RED)
+    svg.text(104, 500, "477 B compact lossless encoding", size=13, weight=680, fill=RED)
+    svg.rect(92, 522, 368, 26, rx=6, fill=RED, opacity=0.82)
+    svg.text(104, 540, "~61 KB different lossless encoding", size=13, weight=680, fill=CARD)
     svg.rect(92, 646, 368, 104, rx=18, fill=RED_PALE)
     svg.text(116, 683, "If length differs, size-dependent", size=15, weight=700, fill=RED)
     svg.text(116, 710, "preprocessing becomes a treatment.", size=15, weight=700, fill=RED)
@@ -508,7 +523,7 @@ def fig4(build, verification, dryrun):
         ("negative control", "one-pixel mutation caught", PURPLE),
         ("mock harness", f"{dryrun['calls']} calls / {dryrun['live_calls']} live", BLUE),
     ]
-    svg.text(64, 558, "verification ledger", size=13, weight=800, fill=BLUE, spacing="1.8")
+    svg.text(64, 558, "VERIFICATION LEDGER", size=13, weight=800, fill=BLUE, spacing="1.8")
     metric_y = 586
     metric_w = 278
     for i, (label, value, color) in enumerate(metrics):
