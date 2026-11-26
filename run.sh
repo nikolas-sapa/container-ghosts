@@ -16,4 +16,5 @@ fi
 .venv/bin/python -m ghosts.regeneration_check artifacts
 .venv/bin/python -m ghosts.verify_invariance artifacts --mutation-test
 .venv/bin/python -m ghosts.probe_harness --dry-run --artifacts artifacts --out artifacts/dryrun --config configs/endpoints.json
+.venv/bin/python scripts/generate_figures.py
 .venv/bin/python -m pytest -q
